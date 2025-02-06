@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="loadBalancePage()">
+    <div class="container">
+        <h1>بەڕێوەبردنی دارایی</h1>
+        <p>باڵانسی ئێستات : $<span id="balance"></span></p>
+        
+        <div class="actions">
+            <input type="number" id="amountBalance" placeholder="بڕ">
+            <button onclick="deposit()">پارە دانان</button>
+            <button onclick="withdraw()">لابردن</button>
+        </div>
+
+        <button onclick="goBack()">گەڕانەوە بۆ داشبۆرد</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

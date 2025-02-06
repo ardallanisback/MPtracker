@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debt Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="loadDebtPage()">
+    <div class="container">
+        <h1>بەڕێوبردنی قەرز</h1>
+        <p>قەرزی ئێستات : $<span id="debt"></span></p>
+        
+        <div class="actions">
+            <input type="number" id="amountDebt" placeholder="بڕ">
+            <button onclick="increaseDebt()">دانانی قەرز</button>
+            <button onclick="decreaseDebt()">دانەوەی قەرز</button>
+        </div>
+
+        <button onclick="goBack()">گەڕانەوە بۆ داشبۆرد</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

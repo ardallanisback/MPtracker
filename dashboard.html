@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>داشبۆرد</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="loadDashboard()">
+    <div class="container">
+        <h1>داشبۆرد</h1>
+        <p>بەخێربێیت, <span id="username"></span></p>
+        <p>بڕی پارەت‌: $<span id="balance"></span></p>
+        <p>قەرز : $<span id="debt"></span></p>
+
+        <div class="actions">
+            <button onclick="navigateToBalance()">گۆڕینی باڵانس</button>
+            <button onclick="navigateToDebt()">گۆڕینی قەرز</button>
+        </div>
+        <button onclick="window.location.href='properties.html'">بەڕێوەبردنی موڵکەکان</button>
+<button onclick="window.location.href='buildings.html'">بەڕێوەبردنی بیناکان</button>
+<button onclick="logout()">دەرچوون</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

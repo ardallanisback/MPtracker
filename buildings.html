@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Buildings</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>بەڕێوەبردنی بیناکان</h1>
+
+        <!-- Lever toggle switch for increase/decrease -->
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="toggle-switch">
+                <span class="slider"></span>
+            </label>
+            <span>زیادکردن / کەمکردن</span>
+        </div>
+
+        <!-- Two buttons for Hotels and Houses -->
+        <div class="buildings-container"> <!-- Changed class name -->
+            <button class="building-button red-button" id="hotels">Hotels: 0</button>
+            <button class="building-button green-button" id="houses">Houses: 0</button>
+        </div>
+
+        <!-- Back to Dashboard -->
+        <button onclick="window.location.href='dashboard.html'">گەڕانەوە بۆ داشبۆرد</button>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to JS -->
+</body>
+</html>
